@@ -1,0 +1,89 @@
+<head>
+    <title>Final Assign</title>
+    <link rel="stylesheet" href="./final.css">
+</head>
+
+<body>
+    <div class="popup1" id="firstPopup">
+        <div class="content1">
+            <p class="margin">
+                <label style="font-size: 19px;" for="">
+                    How many Student Do u want to Add !
+                </label>
+            </p>
+            <p class="block"><input id="CountSt" type="number" class="select"></p>
+             <button class="style" id="next" onclick="AddStudent()">Next</button>
+             <button class="style" id="exit2" onclick="exitB()">Cancel</button>
+            </div>
+        </div>
+        <div class="popup" id="mypopup">
+            <div class="content">
+                <div id="empty">
+                    <span class="pg">
+                        Add New Student
+                    </span>
+                    <p>
+                        <label for="taskDescription" id="name">Student ID</label>
+                        <input type="number" id="taskDescription" min="1">
+                    </p>
+                    <p>
+                        <label for="taskDescription1" id="name">First Name</label>
+                        <input type="text" id="taskDescription1">
+                    </p>
+                    <p>
+                        <label for="taskDescription2" id="name">last Name</label>
+                        <input type="text" id="taskDescription2">
+                    </p>
+
+                    <button id="save" class="buttonSave">Save</button>
+                    <button class="buttonGo" id="push" onclick="PushTo()">Go To Save</button>
+                    <button class="marginExit" id="exit" onclick="exitB()">Cancel</button>
+                </div>
+            </div>
+    </div>
+    <div class="title">
+        <h1 align="center">Attendance Table</h1>
+    </div>
+    <div class="wth">
+        <table border="" align="center"  class="tableContent" >
+            <tr style="background-color: rgb(246, 232, 182);">
+                <th>Num</th>
+                <th>Student ID</th>
+                <th>Student Name</th>
+                <th colspan="3">Attendance</th>
+            </tr>
+            <tbody id="addRow" class="addColor">
+                <tr id="color" class="widthFortd">
+                    <td>1</td>
+                    <td>123</td>
+                    <td>Dala Bilal</td>
+                    <td><button class="emojiSize" id="oneB" onclick="updatepresent(0)">&#9989;</button></td>
+                    <td><button class="emojiSize" id="twoB"  onclick="updateabsent(1)">&#128683;</button></td>
+                    <td><button class="emojiSize" id="threeB" onclick="updatelate(2)">&#128339;</button></td>
+                </tr>
+                <tr id="color1" class="widthFortd">
+                    <td>2</td>
+                    <td>124</td>
+                    <td>Rahaf Bilal</td>
+                    <td><button class="emojiSize" id="fourB" onclick="updatepresent(3)">&#9989;</button></td>
+                    <td><button class="emojiSize" id="fiveB"  onclick="updateabsent(4)">&#128683;</button></td>
+                    <td><button class="emojiSize" id="sixB" onclick="updatelate(5)">&#128339;</button></td>
+                </tr>
+            </tbody>
+                <div>
+                    <tr class="count" style="background-color: rgb(246, 232, 182);">
+                        <td colspan="3" class="font">Statistics</td>
+                        <td><output id="countPresent"></output></td>
+                        <td><output id="countAbsent"></output></td>
+                        <td><output id="countLate"></output></td>
+                    </tr>
+                </div>
+        </table>
+        <div class="Basicbutton">
+            <button class="basicButtonDesign" onclick="Add()">Add student</button>
+            <button class="basicButtonDesign"id="clearAll" class="clear">Clear All</button>
+            <button class="basicButtonDesign"onclick="saveCSV()">Download</button>
+        </div>
+    </div>
+    <script src="./final.js"></script>
+</body>

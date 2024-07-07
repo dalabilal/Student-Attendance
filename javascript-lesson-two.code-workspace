@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "..\\jsTwo\\javascript-lesson-two"
+		},
+		{
+			"path": "..\\jsThree\\New folder"
+		},
+		{
+			"path": "..\\..\\..\\Downloads\\TODO App2 (1)\\JS_Example3"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "JS_Example3"
+	}
+}
